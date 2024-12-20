@@ -1,0 +1,109 @@
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2d30;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+}
+
+/* Container do formulário */
+.container {
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px black;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 32px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que os campos que não couberem na linha se movam para a linha seguinte */
+    gap: 20px;  /* Espaço entre os campos */
+}
+
+/* Grupo de inputs (ficando na linha) */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;  /* Largura dos campos para que caibam duas colunas */
+}
+
+/* Estilo dos labels */
+label {
+    font-size: 16px;
+    color: #f39c12;
+    margin-bottom: 5px;  /* Espaço entre o label e o input */
+}
+
+/* Estilo dos inputs e select */
+form input,
+form select { 
+    background-color: #ecf0f1;
+    border: 2px solid #f39c12;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000000;
+    transition: border-color 0.3s ease-in-out;
+    width: 100%;  /* Preenche toda a largura do grupo de input */
+}
+
+/* Estilo do select */
+form select {
+    padding: 12px;
+    border: 2px solid #f39c12;
+    background-color: #ecf0f1;
+    color: #000000;
+}
+
+/* Efeito de foco nos campos */
+form input:focus, 
+form select:focus { 
+    outline: none;
+    border-color: #f39c12;
+}
+
+/* Estilo do botão */
+form button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+/* Efeito de hover e active do botão */
+form button:hover {
+    background-color: #e67e22;
+}
+
+form button:active {
+    background-color: #d35400;
+}

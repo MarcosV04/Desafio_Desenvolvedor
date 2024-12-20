@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Endereço</title>
+    <link rel="stylesheet" href="Address.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Endereço</h1>
+        <form id="addressForm">
+            <div class="input-group">
+                <label for="street">Rua</label>
+                <input type="text" id="street" placeholder="Rua" required><br>
+
+                <label for="neighborhood">Bairro</label>
+                <input type="text" id="neighborhood" placeholder="Bairro" required><br>
+
+                <label for="city">Cidade</label>
+                <input type="text" id="city" placeholder="Cidade" required><br>
+                
+                <label for="state">Estado</label>
+                <input type="text" id="state" placeholder="Estado" required><br>
+            
+                <label for="postalCode">CEP</label>
+                <input type="text" id="postalCode" placeholder="CEP" required><br>
+          
+            <button type="submit" id="btnSalvarEndereco">Salvar Endereço</button>
+        </form>
+    </div>
+    <script src="js/address.js"></script>
+</body>
+</html>

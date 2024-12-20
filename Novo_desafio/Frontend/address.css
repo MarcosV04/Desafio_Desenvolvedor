@@ -1,0 +1,89 @@
+/* Reset básico de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2d30;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px black;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Aumentado para dar mais espaço entre os campos */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Alinha os labels à esquerda */
+}
+
+label {
+    font-size: 16px;
+    color: #f39c12;
+    margin-bottom: 5px;  /* Espaço entre o label e o input */
+}
+
+form input {
+    background-color: #ecf0f1;
+    border: 1px solid #f39c12;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #f39c12;
+    transition: border-color 0.3s ease-in-out;
+    width: 100%;  /* Faz os inputs ficarem com 100% da largura do contêiner */
+}
+
+form input:focus {  
+    outline: none;
+    border-color: #f39c12;
+}
+
+form button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #e67e22;
+}
+
+form button:active {
+    background-color: #d35400;
+}
+

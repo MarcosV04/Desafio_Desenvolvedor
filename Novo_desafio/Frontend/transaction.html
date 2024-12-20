@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transações</title>
+    <link rel="stylesheet" href="transaction.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Transações</h1>
+
+        <!-- Formulário de cálculo de rendimento -->
+        <form id="investmentForm">
+            <div class="input-group">
+                <label for="investmentAmount">Valor Investido</label>
+                <input type="number" id="investmentAmount" placeholder="Valor Investido" required>
+            </div>
+            <div class="input-group">
+                <label for="interestRate">Taxa de Juros (%)</label>
+                <input type="number" id="interestRate" placeholder="Taxa de Juros" required>
+            </div>
+            <div class="input-group">
+                <label for="period">Período (meses)</label>
+                <input type="number" id="period" placeholder="Período em meses" required>
+            </div>
+            <div class="input-group">
+                <label for="totalAmount">Valor Total</label>
+                <input type="text" id="totalAmount" placeholder="Valor Total" disabled>
+            </div>
+            <button type="button" id="calculateButton">Calcular Rendimento</button>
+        </form>
+
+        <!-- Formulário de transação -->
+        <form id="transactionForm">
+            <div class="input-group">
+                <label for="transactionType">Tipo de Transação</label>
+                <select id="transactionType" required>
+                    <option value="deposit">Depositar</option>
+                    <option value="withdraw">Retirar</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="amount">Valor</label>
+                <input type="number" id="amount" placeholder="Digite o valor" required>
+            </div>
+            <div class="input-group">
+                <label for="date">Data</label>
+                <input type="date" id="date" required>
+            </div>
+            <button type="button">Confirmar Transação</button>
+        </form>
+        
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar para o Home</button>
+    </div>
+
+    <!-- Referência ao JavaScript -->
+    <script src="js/transaction.js"></script>
+
+</body>
+</html>
